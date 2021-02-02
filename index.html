@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Mi Curriculum</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.16.1/axios.min.js"></script>
+    <script src="https://kit.fontawesome.com/2f1bcf33e5.js" crossorigin="anonymous"></script>
+</head>
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">
+      <div id="app" class="container-fluid">
+        <div class="row">
+          <div class="col-12 col-lg-3">
+            <nav class="navbar navbar-expand-lg navbar-light" id="sideNav">  
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto nav-pills flex-column">
+                    <div class="d-flex justify-content-center">
+                      <div id="datosPersonales" v-for="dato in datos.DatosPersonales">
+                        <img v-bind:src=dato.Imagen class="img rounded-circle" width="140" height="140">
+                        <h4>{{dato.Nombre}}</h4>
+                        <p>{{dato.Edad}}</p>
+                        <p>{{dato.FechaNacimiento}}</p>
+                        <p>{{dato.Direccion}}</p>
+                        <p>{{dato.Localidad}}</p>
+                        <p>{{dato.Correo}}</p>
+                        <p>{{dato.Telefono}}</p>
+                        <P>{{dato.Descripcion}}</P>
+                      </div>
+                    </div>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#experienciaLaboral">Experiencia Profesional</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#educacion">Educación</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#habilidades">Habilidades</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#proyectos">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#idiomas">Idiomas</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                    <div class="d-flex justify-content-center">
+                      <div>
+                        <img src="Imagenes/spain.png">
+                        <img src="Imagenes/united-kingdom.png">
+                      </div>
+                    </div>
+                  </ul>
+              </div>
+          </nav>
+          </div>
+          <div class="col-12 col-lg-9">
+            <div id="experienciaLaboral" class="container-fluid" style="padding-top:70px;padding-bottom:70px">
+              <h1>Experiencia Laboral</h1>
+              <p>{{datos.ExperienciaLaboral[0].Trabajo}}</p>
+              <div class="card-deck">
+                <div v-for="dato in datos.ExperienciaLaboral" class="card">
+                  <img v-bind:src=dato.Imagen class="card-img-top " alt="Campo Futbol">
+                  <div class="card-body">
+                    <h5 class="card-title">{{dato.Trabajo}}</h5>
+                    <p class="card-text">{{dato.Empresa}}</p>
+                    <p class="card-text">{{dato.Fecha}}</p>
+                    <p class="card-text">{{dato.Descripcion}}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="educacion" class="container-fluid" style="padding-top:70px;padding-bottom:70px">
+              <h1>Educación</h1>
+              <table class="table text-center">
+                <thead class="thead-dark">
+                  <tr>
+                    <th scope="col">Título</th>
+                    <th scope="col">Lugar</th>
+                    <th scope="col">Fechas</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr v-for="dato in datos.Educacion">
+                    <td>{{dato.Titulo}}</td>
+                    <td>{{dato.Lugar}}</td>
+                    <td>{{dato.Fecha}}</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div id="habilidades" class="container-fluid bg-danger" style="padding-top:70px;padding-bottom:70px">
+              <h1>Habilidades</h1>
+              <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+              <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+            </div>
+            <div id="proyectos" class="container-fluid" style="padding-top:70px;padding-bottom:70px">
+              <h1>Proyectos Realizados</h1>
+              <div class="row">
+                <div v-for="dato in datos.Proyectos" class="col-12 col-lg-4">
+                  <div class="card-deck">
+                    <div class="card">
+                      <img v-bind:src=dato.ImagenProyecto class="card-img-top " alt="Imagen Proyecto">
+                      <div class="card-body">
+                        <h5 class="card-title d-flex justify-content-center">{{dato.Titulo}}</h5>
+                      </div>
+                      <div class="card-footer">
+                        <small class="text-muted d-flex justify-content-center">
+                          <a class="btn btn-primary" data-toggle="modal" v-bind:data-target=dato.Id href="#" role="button">Saber más ...</a>
+                        </small>
+                      </div>
+                    </div>
+                    <!--Modal-->
+                    <div class="modal fade" v-bind:id=dato.Titulo tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="ModalTitle">{{dato.Titulo}}</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="row">
+                              <div class="col-6 imagenesProyecto">
+                                <img v-bind:src=dato.ImagenProyecto class="card-img-top " alt="Imagen Proyecto">
+                                <img v-bind:src=dato.Imagen2 class="card-img-top " alt="Imagen Proyecto">
+                                <img v-bind:src=dato.Imagen3 class="card-img-top " alt="Imagen Proyecto">
+                              </div>
+                              <div class="col-6">
+                                <p><b>Link Produccion:</b> <a>{{dato.LinkProduccion}}</a></p>
+                                <p><b>Link Produccion:</b> <a>{{dato.LinkRepositorio}}</a></p>
+                                <p><b>Resumen:</b> {{dato.Resumen}}</p>
+                                <p><b>Tecnologías Aplicadas:</b> {{dato.Tecnologias}}</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="idiomas" class="container-fluid" style="padding-top:70px;padding-bottom:70px">
+              <h1>Idiomas</h1>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">Español 100%</div>
+              </div>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">Inglés 80%</div>
+              </div>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 15%;" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">Francés 15%</div>
+              </div>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 5%;" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100">Aleman 5%</div>
+              </div>
+            </div>
+            <div id="contacto" class="container-fluid" style="padding-top:70px;padding-bottom:70px">
+              <h1>Contacto</h1>
+              <form>
+                <div class="form-group">
+                  <label for="name">Nombre:</label>
+                  <input type="text" class="form-control" id="name" placeholder="Escribe tu nombre">
+                </div>
+                <div class="form-group">
+                  <label for="surname">Apellidos:</label>
+                  <input type="text" class="form-control" id="surname" placeholder="Escribe tus apellidos">
+                </div>
+                <div class="form-group">
+                  <label for="select">Tipo de Contacto</label>
+                  <select class="form-control" id="select">
+                    <option>Duda/Consulta</option>
+                    <option>Propuesta de Trabajo</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="comment">¡Cuentame tu inquietud!</label>
+                  <textarea class="form-control" id="comment" rows="3" placeholder="Deja aqui tu comentario"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+              </form>
+            </div>
+            <div id="redesSociales" class="container-fluid" style="padding-top:70px;padding-bottom:70px">
+              <h1>¡Puedes encontrarme en mis redes sociales!</h1>
+              <section id="footer">
+                <div class="color"></div>
+                <div class="color"></div>
+                <div class="color"></div>
+                <ul>
+                    <li><a href="https://github.com/aleexfr1"><i class="fab fa-github"></i></a></li>
+                    <li><a href=https://www.linkedin.com/in/afdez2><i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="https://www.instagram.com/aleexfr1/?hl=es"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://www.facebook.com/aleexfr1/"><i class="fab fa-facebook-square"></i></a></li>
+                    <li><a href="https://twitter.com/Veeenm7"><i class="fab fa-twitter-square"></i></a></li>
+                </ul>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+  <script src="./js/main.js"></script>
+</html>
