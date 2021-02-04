@@ -26,14 +26,14 @@
                   <ul class="navbar-nav mr-auto nav-pills flex-column text-center">
                     <div class="d-flex justify-content-center">
                       <div id="datosPersonales" v-for="dato in datos.DatosPersonales">
-                        <img v-bind:src=dato.Imagen class="img rounded-circle" width="140" height="140">
+                        <img v-bind:src=dato.Foto class="img rounded-circle" width="140" height="140">
                         <h4>{{dato.Nombre}}</h4>
                         <p>{{dato.FechaNacimiento}}</p>
                         <p>{{dato.Direccion}}</p>
                         <p>{{dato.Localidad}}</p>
                         <p>{{dato.Correo}}</p>
                         <p>{{dato.Telefono}}</p>
-                        <P>{{dato.Descripcion}}</P>
+                        <p v-if="es">{{dato.Descripcion}}</p>
                       </div>
                     </div>
                     <li class="nav-item">
@@ -90,8 +90,7 @@
                   <img v-bind:src=dato.Imagen2 class="card-img-top " alt="imagen">
                   <div class="card-body">
                     <h5 class="card-title">{{dato.Jefe}}</h5>
-                    <p class="card-text">{{dato.Empresa}}</p>
-                    <p class="card-text">{{dato.Fecha}}</p>
+                    <p class="card-text">{{dato.Empresa}}</p> 
                     <p class="card-text">{{dato.Descripcion}}</p>
                   </div>
                 </div>
@@ -103,9 +102,9 @@
               <table class="table text-center table-striped table-dark">
                 <thead class="thead-dark">
                   <tr>
-                    <th scope="col">Título Academico</th>
-                    <th scope="col">Lugar de Realización</th>
-                    <th scope="col">Fecha Inicio/Fin</th>
+                    <th scope="col"><b>Título Academico</b></th>
+                    <th scope="col"><b>Lugar de Realización</b></th>
+                    <th scope="col"><b>Inicio/Fin</b></th>
                   </tr>
                 </thead>
                 <tbody>
@@ -123,8 +122,8 @@
               <table class="table text-center table-striped table-dark">
                 <thead class="thead-dark">
                   <tr>
-                    <th scope="col">Fecha Inicio/Fin</th>
-                    <th scope="col">Nivel</th>
+                    <th scope="col"><b>Aptitud/Habilidad</b></th>
+                    <th scope="col"><b>Nivel</b></th>
                   </tr>
                 </thead>
                 <tbody>

@@ -5,15 +5,29 @@ var app = new Vue({
     mounted: function(){
         this.getInfo();
     },
-    data: {
-        datos: []
-    },
+    data () { // Para cambiar el idioma de los datos del CV
+        return {
+            datos: [],
+            es: true,
+            en: false
+        }
+     },
     
     methods: {
+        cambioEN: function ()  {
+            this.en = true;
+            this.es = false;
+        },
+
+        cambioES: function () {
+            this.en = false;
+            this.es = true;
+
+        },
         getInfo: function(){
             axios.get("./js/datos.json").then((response) => {
                 this.datos = response.data
-                //console.log(this.datos.ExperienciaLaboral[0].Trabajo)
+
             })
             .catch(function (error){
                 console.log(error);
