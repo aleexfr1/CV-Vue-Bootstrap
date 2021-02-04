@@ -1,23 +1,32 @@
 
    {"DatosPersonales":[{
-    "Imagen": "Imagenes/foto.jpg", "Nombre":"Alexandro Fernandez Ortiz", "Edad":"21 Años", "FechaNacimiento":"21/05/1999", "Direccion":"Meson de Arroyo 16 2A", "Localidad":"Loja, Granada", "Correo":"info@afdez.es", "Telefono":"+34 622 179 432", "Descripcion":"Estudiante de Desarrollo de Aplicaciones Web y Analista de Deportes Electronicos"}],
+    "Imagen": "Imagenes/foto.jpg", "Nombre":"Alexandro Fernandez Ortiz", "FechaNacimiento":"21/05/1999", "Direccion":"Meson de Arroyo 16 2A", "Localidad":"Loja, Granada", "Correo":"info@afdez.es", "Telefono":"+34 622 179 432", "Descripcion":"Estudiante de Desarrollo de Aplicaciones Web y Analista de Deportes Electronicos"}],
 
     "ExperienciaLaboral":[{
     "Imagen":"Imagenes/Misfits2.jpg", "Trabajo": "Analista de Clash Royale", "Empresa": "Misfits Gaming Group", "Fecha": "Jul-2018 - Ene-2019", "Descripcion": "Una de mis labores era la obtencion de estadisticas y datos de competición para el equipo de Clash Royale en la Clash Royale League, la mejor liga del mundo de Clash Royale"},
     {"Imagen":"Imagenes/Outplayed.jpg", "Trabajo": "Analista Jefe", "Empresa": "Outplayed Staff", "Fecha": "Ago-2019 - Jun-2020", "Descripcion": "Jefe de un grupo de analistas los cuales trabajaron para el equipo italiano en la Orange Crown League, la mejor liga a nivel nacional de Clash Royale"},
     {"Imagen":"Imagenes/EspañaCR.jpg", "Trabajo": "Analista Asistente", "Empresa": "Seleccion Española de Clash Royale", "Fecha": "Nov-2020 - Actual", "Descripcion": "Analista del equipo nacional de Clash Royale el cual, competira en la NoTilt Worlds para convertirse en campeona del mundo "}],
     
+    "Referencias":[{
+        "Imagen2":"Imagenes/josevi2.jpg", "Jefe": "Jose Vicente Torres", "Empresa": "Entrenador Misfits", "Fecha": "Jul-2018 - Ene-2019", "Descripcion": "El siempre mostró una gran predisposicion por querer mejorar con una actitud impoluta tanto en lo personal como compañero de equipo"},
+        {"Imagen2":"Imagenes/jostum2.jpg", "Jefe": "Jose Maria Rivas", "Empresa": "Entrenador Outplayed", "Fecha": "Ago-2019 - Jun-2020", "Descripcion": "Gran analista y gran persona. Siempre intentando mejorar y ayudar al equipo con su trabajo. El sabe como adaptar el trabajo a cualquier circunstancia y siempre da el 100% para el equipo"},
+        {"Imagen2":"Imagenes/broxha2.jpg", "Jefe": "Borja Reinoso", "Empresa": "Analista Principal Seleccion Española", "Fecha": "Nov-2020 - Actual", "Descripcion": ""}],
+
     "Educacion":[{
     "Titulo": "E.S.O (Educacion Secundaria Obligatoria)", "Lugar": "IES Virgen de la Caridad","Fecha": "2010/2016"},
     {"Titulo": "Grado Medio en Sistemas Microinformaticos y Redes", "Lugar": "IES Politecnico Hermenegildo Lanz","Fecha": "2017/2019"},
     {"Titulo": "Grado Superior Desarrollo De Aplicaciones Web", "Lugar": "IES Francisco Ayala","Fecha": "2019/2021"}],
 
     "Habilidades":[{
-        
-    }],
+        "AptitudHabilidad": "Microsoft Word / Google Docs", "Nivel": "Avanzado"},
+        {"AptitudHabilidad": "Microsoft Excel / Google Spreadsheets", "Nivel": "Avanzado"},
+        {"AptitudHabilidad": "Adobe Photoshop", "Nivel": "Avanzado"},
+        {"AptitudHabilidad": "CSS", "Nivel": "Medio"},
+        {"AptitudHabilidad": "JavaScript", "Nivel": "Medio"},
+        {"AptitudHabilidad": "HTML5", "Nivel": "Medio"}],
     
     "Proyectos":[{
-    "ImagenProyecto": "Imagenes/PortadaLandingPage.jpg", "Imagen2": "Imagenes/Imagen2LandingPage.jpg", "Imagen3": "Imagenes/Imagen3LandingPage.jpg", "Id": "#LandingPage", "Titulo": "LandingPage", "LinkProduccion":"https://aleexfr1.github.io/HTML-CSS-JQuery-Project/", "LinkRepositorio":"https://github.com/aleexfr1/HTML-CSS-JQuery-Project", "Resumen": "LandinPage es una página de aterrizaje a la página web de mi Gimnasio. La he realizado para ellos para cuando la gente en un banner, botón, portal... entren a ella y les llame la atención.", "Tecnologias": "jQuery, AJAX, HTML, CSS"},
-    {"ImagenProyecto": "Imagenes/Soon.jpg", "Imagen2": "Imagenes/Soon.jpg", "Imagen3": "Imagenes/Soon.jpg", "Id": "#SOON", "Titulo": "SOON", "LinkProduccion":"https://maariio17.github.io/CinemaJSON/", "LinkRepositorio":"https://github.com/maariio17/CinemaJSON", "Resumen": "Esta Web esta realizada con el objetivo de aprender hacer peticionos AJAX a una API. En ella puedes bucar cualquier tipo de pelicula, se te mostrara la portada de la pelicula y al pulsar sobre ella, te saldra su informacion", "Tecnologias": "javaScript, AJAX, HTML, CSS"},
-    {"ImagenProyecto": "Imagenes/Soon.jpg", "Imagen2": "Imagenes/Soon.jpg", "Imagen3": "Imagenes/Soon.jpg", "Id": "#SOON", "Titulo": "SOON", "LinkProduccion":"https://maariio17.github.io/BookList/", "LinkRepositorio":"https://github.com/maariio17/BookList", "Resumen": "Esta web la he realizado para que la gente almacene online todos sus libros con sus datos y sepa en todo momento los libros que tiene y si estan leidos o no.", "Tecnologias": "javaScript, HTML, CSS"}]
+    "ImagenProyecto": "Imagenes/PortadaLandingPage.jpg", "Imagen2": "Imagenes/PortadaLandingPage.jpg", "Imagen3": "Imagenes/PortadaLandingPage.jpg", "Id": "#LandingPage", "Titulo": "LandingPage", "LinkProduccion":"https://aleexfr1.github.io/HTML-CSS-JQuery-Project/", "LinkRepositorio":"https://github.com/aleexfr1/HTML-CSS-JQuery-Project", "Resumen": "LandinPage es una página de aterrizaje a la página web de mi Gimnasio. La he realizado para ellos para cuando la gente en un banner, botón, portal... entren a ella y les llame la atención."},
+    {"ImagenProyecto": "Imagenes/Soon.jpg", "Imagen2": "Imagenes/Soon.jpg", "Imagen3": "Imagenes/Soon.jpg", "Id": "#SOON", "Titulo": "SOON", "LinkProduccion":"None", "LinkRepositorio":"None"},
+    {"ImagenProyecto": "Imagenes/Soon.jpg", "Imagen2": "Imagenes/Soon.jpg", "Imagen3": "Imagenes/Soon.jpg", "Id": "#SOON", "Titulo": "SOON", "LinkProduccion":"None", "LinkRepositorio":"None"}]    
 }
