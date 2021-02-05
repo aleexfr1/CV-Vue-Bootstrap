@@ -7,7 +7,7 @@
 
     "ExperienciaLaboral":[{
     "Imagen":"Imagenes/Misfits2.jpg", "Trabajo": "Analista de Clash Royale", "Empresa": "Misfits Gaming Group", "Fecha": "Jul-2018 - Ene-2019", "Descripcion": "Una de mis labores era la obtencion de estadisticas y datos de competición para el equipo de Clash Royale en la Clash Royale League, la mejor liga del mundo de Clash Royale"},
-    {"Imagen":"Imagenes/Outplayed.jpg", "Trabajo": "Analista Jefe", "Empresa": "Outplayed Staff", "Fecha": "Ago-2019 - Jun-2020", "Descripcion": "Jefe de un grupo de analistas los cuales trabajaron para el equipo italiano en la Orange Crown League, la mejor liga a nivel nacional de Clash Royale"},
+    {"Imagen":"Imagenes/outplayed.jpg", "Trabajo": "Analista Jefe", "Empresa": "Outplayed Staff", "Fecha": "Ago-2019 - Jun-2020", "Descripcion": "Jefe de un grupo de analistas los cuales trabajaron para el equipo italiano en la Orange Crown League, la mejor liga a nivel nacional de Clash Royale"},
     {"Imagen":"Imagenes/EspañaCR.jpg", "Trabajo": "Analista Asistente", "Empresa": "Seleccion Española de Clash Royale", "Fecha": "Nov-2020 - Actual", "Descripcion": "Analista del equipo nacional de Clash Royale el cual, competira en la NoTilt Worlds para convertirse en campeona del mundo "}],
     "WorkExperience":[{
         "Photo":"Imagenes/Misfits2.jpg", "Work": "Analista de Clash Royale", "Company": "Misfits Gaming Group", "Date": "Jul-2018 - Ene-2019", "Description": "One of my labors was taking stats and data from other teams for Misfits Clash Royale team in Clash Royale League, the best prestigious league in the world"},
@@ -19,7 +19,7 @@
     "Referencias":[{
         "Imagen2":"Imagenes/josevi2.jpg", "Jefe": "Jose Vicente Torres", "Empresa": "Entrenador Misfits", "Descripcion": "El siempre mostró una gran predisposicion por querer mejorar con una actitud impoluta tanto en lo personal como compañero de equipo"},
         {"Imagen2":"Imagenes/jostum2.jpg", "Jefe": "Jose Maria Rivas", "Empresa": "Entrenador Outplayed", "Descripcion": "Gran analista y gran persona. Siempre intentando mejorar y ayudar al equipo con su trabajo. El sabe como adaptar el trabajo a cualquier circunstancia y siempre da el 100% para el equipo"},
-        {"Imagen2":"Imagenes/broxha2.jpg", "Jefe": "Borja Reinoso", "Empresa": "Analista Principal Seleccion Española", "Descripcion": ""}],
+        {"Imagen2":"Imagenes/broxha2.jpg", "Jefe": "Borja Reinoso", "Empresa": "Analista Principal Seleccion Española", "Descripcion": "Muy capaz y muy constante. Su gran capacidad de adaptación y sus conocimientos en programación le convierten en un candidato perfecto para cualquier organización."}],
     "References":[{
             "Photo2":"Imagenes/josevi2.jpg", "Boss": "Jose Vicente Torres", "Company": "Misfits Head Coach", "Description": "He always showed a great predisposition for wanting to improve, with an absolute attitude as a personal and professional partner"},
             {"Photo2":"Imagenes/jostum2.jpg", "Boss": "Jose Maria Rivas", "Company": "Outplayed Head Coach", "Description": "Great analyst, great person. Always trying to improve and help the team with his work. He knows how to adapt to any circumstances and always give his 100%"},
