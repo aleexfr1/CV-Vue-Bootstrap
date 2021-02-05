@@ -33,7 +33,8 @@
                         <p>{{dato.Localidad}}</p>
                         <p>{{dato.Correo}}</p>
                         <p>{{dato.Telefono}}</p>
-                        <p>{{dato.Descripcion}}</p>
+                        <p v-if="es">{{dato.Descripcion}}</p>
+                        <p v-if="en">{{dato.Description}}</p>
                       </div>
                     </div>
                     <li class="nav-item">
@@ -59,8 +60,8 @@
                     </li>
                     <div class="d-flex justify-content-center">
                       <div>
-                        <img src="Imagenes/spain.png">
-                        <img src="Imagenes/united-kingdom.png">
+                        <button v-onclick="CambioES"><img src="Imagenes/spain.png"></button>
+                        <button v-onclick="CambioEN"><img src="Imagenes/united-kingdom.png"></button>
                       </div>
                     </div>
                   </ul>
